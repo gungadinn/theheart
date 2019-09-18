@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link type="text/css" rel="stylesheet" href="style.css"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="Board.css" rel="stylesheet" />	
+
+		<style>
+	
+		.container-fluid{
+			padding-top: 150px;
+			padding-bottom: 150px;
+		}
+		
+		.bcolor{
+			background-color: #ffb7cf;
+		}
+		
+		.headmenu{
+			position: fixed;
+			text-align: center;
+			z-index: 2;
+		}
+		
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+			margin: auto;
+		}
+		
+		h2{
+			text-align: center;
+		}
+		
+		.white{
+			color: white;
+		}
+		
+		</style>
+	</head>
+	
+	<body>
+	
+	
+		<header>
+		<nav class="navbar navbar-default navbar-fixed-top dhnavbar" role="navigation">
+			<div class="navigation">
+				<div class="container">					
+					<div class="navbar-header">
+						<div class="navbar-brand">
+							<a href="../first/pointbar.html"><img src="images/drawheart.png" alt="Logo" style="width:100px;"></a>
+						</div>
+					</div>
+					
+					<div class="navbar-collapse collapse">							
+						<div class="menu text-right">
+							<ul class="nav nav-tabs text-right" role="tablist">
+								<li class="has-dropdown">
+									<a href="about.html">About</a>
+									<ul class="dropdown">
+										<li><a href="about.html">member</a></li>
+										<li><a href="about.html">history</a></li>
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="make.html">Make</a>
+									<ul class="dropdown">
+										<li><a href="make.html">parents</a></li>
+										<li><a href="make.html">teacher</a></li>
+										<li><a href="make.html">friend</a></li>
+									</ul>
+								</li>
+								<li><a href="non.html">Form</a></li>
+								<li class="has-dropdown">
+									<a href="help.html">Help</a>
+									<ul class="dropdown">
+										<li><a href="help.html">movie</a></li>
+										<li><a href="help.html">explain</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>						
+				</div>
+			</div>	
+		</nav>			
+	</header>
+	
+	
+	<!--여기서부터 구현-->
+	
+	<div class="headmenu col-sm-12">
+	<div class="container" href="myPage" style=" margin-top: 100px;">
+	
+		<button type="button" value="btn1" class="btn btn-warning" >#부모님</button>
+		<button type="button" value="btn2" class="btn btn-info" >#친구</button>
+		<button type="button" value="btn3" class="btn btn-primary" >#선생님</button>
+		<button type="button" value="btn4" class="btn btn-success">#사랑</button>
+		<button type="button" value="btn5" class="btn btn-info">#우정</button>
+		<button type="button" value="btn6" class="btn btn-warning" >#연인</button>
+		<button type="button" value="btn7" class="btn btn-danger" >#캐릭터</button>
+		<button type="button" value="btn8" class="btn btn-primary" >#심플</button> 
+
+	</div>
+</div>
+
+	
+	<div id="parents" class="container-fluid">
+		<div class = "row">
+			<div class = "col-sm-12">
+				<h2><b>#부모님</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel0" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel0" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel0" data-slide-to="1"></li>
+							<li data-target="#myCarousel0" data-slide-to="2"></li>
+							<li data-target="#myCarousel0" data-slide-to="3"></li>
+							<li data-target="#myCarousel0" data-slide-to="4"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="img/14.jpg" download><img src="img/14.jpg" id="dp" alt="..." width="300px" height="600px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/5.jpg" download><img src="img/5.jpg" alt="..." width="300px" height="600px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/9.jpg" download><img src="img/9.jpg" alt="..." width="300px" height="600px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/19.jpg" download><img src="img/19.jpg" alt="..." width="300px" height="600px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/25.jpg" download><img src="img/25.jpg" alt="..." width="300px" height="600px"></a>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel0" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel0" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="friend" class="container-fluid bcolor">
+		<div class = "row">
+			<div class = "col-sm-12">
+				<h2 class="white"><b>#친구</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel1" data-slide-to="1"></li>
+							<li data-target="#myCarousel1" data-slide-to="2"></li>
+							<li data-target="#myCarousel1" data-slide-to="3"></li>
+							<li data-target="#myCarousel1" data-slide-to="4"></li>
+							<li data-target="#myCarousel1" data-slide-to="5"></li>
+							<li data-target="#myCarousel1" data-slide-to="6"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="img/2.jpg" download><img src="img/2.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/3.jpg" download><img src="img/3.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/5.jpg" download><img src="img/5.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/6.jpg" download><img src="img/6.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/16.jpg" download><img src="img/16.jpg" alt="..." width="300px" height="500px"></a>
+						</div>		
+						
+						<div class="item">
+							<a href="img/17.jpg" download><img src="img/17.jpg" alt="..." width="300px" height="500px"></a>
+						</div>	
+
+						<div class="item">
+							<a href="img/22.jpg" download><img src="img/22.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel1" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel1" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	 
+	 
+	 <div id="teacher" class="container-fluid">
+		<div class = "row">
+			<div class = "col-sm-12">
+				<h2><b>#선생님</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel2" data-slide-to="1"></li>
+							<li data-target="#myCarousel2" data-slide-to="2"></li>
+							<li data-target="#myCarousel2" data-slide-to="3"></li>
+							<li data-target="#myCarousel2" data-slide-to="4"></li>
+							<li data-target="#myCarousel2" data-slide-to="5"></li>
+							<li data-target="#myCarousel2" data-slide-to="6"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="img/4.jpg" download><img src="img/4.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/7.jpg" download><img src="img/7.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/8.jpg" download><img src="img/8.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/9.jpg" download><img src="img/9.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/11.jpg" download><img src="img/11.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/14.jpg" download><img src="img/14.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/25.jpg" download><img src="img/25.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel2" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel2" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="love" class="container-fluid bcolor">
+		<div class = "row">
+			<div class = "col-sm-12">
+				<h2 class="white"><b>#사랑</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel3" data-slide-to="1"></li>
+							<li data-target="#myCarousel3" data-slide-to="2"></li>
+							<li data-target="#myCarousel3" data-slide-to="3"></li>
+							<li data-target="#myCarousel3" data-slide-to="4"></li>
+							<li data-target="#myCarousel3" data-slide-to="5"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="img/5.jpg" download><img src="img/5.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/9.jpg" download><img src="img/9.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/15.jpg" download><img src="img/15.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/19.jpg" download><img src="img/19.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+
+						<div class="item">
+							<a href="img/23.jpg" download><img src="img/23.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+				
+						<div class="item">
+							<a href="img/26.jpg" download><img src="img/26.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel3" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel3" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="friendship" class="container-fluid">
+	<div class = "row">
+			<div class = "col-sm-12">
+				<h2><b>#우정</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel4" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel4" data-slide-to="1"></li>
+							<li data-target="#myCarousel4" data-slide-to="2"></li>
+							<li data-target="#myCarousel4" data-slide-to="3"></li>
+							<li data-target="#myCarousel4" data-slide-to="4"></li>
+							<li data-target="#myCarousel4" data-slide-to="5"></li>
+							<li data-target="#myCarousel4" data-slide-to="6"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="img/1.jpg" download><img src="img/1.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/2.jpg" download><img src="img/2.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/3.jpg" download><img src="img/3.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/7.jpg" download><img src="img/7.jpg" alt="..." width="300px" height="500px"></a>
+						</div>				
+						
+						<div class="item">
+							<a href="img/9.jpg" download><img src="img/9.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/18.jpg" download><img src="img/18.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						
+						<div class="item">
+							<a href="img/17.jpg" download><img src="img/17.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel4" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel4" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="couple" class="container-fluid bcolor">
+	<div class = "row">
+			<div class = "col-sm-12">
+				<h2 class="white"><b>#연인</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel5" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel5" data-slide-to="1"></li>
+							<li data-target="#myCarousel5" data-slide-to="2"></li>
+							<li data-target="#myCarousel5" data-slide-to="3"></li>
+							<li data-target="#myCarousel5" data-slide-to="4"></li>
+							<li data-target="#myCarousel5" data-slide-to="5"></li>
+							<li data-target="#myCarousel5" data-slide-to="6"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">					
+						<div class="item active">
+							<a href="img/26.jpg" download><img src="img/26.jpg" alt="..." width="300px" height="500px"></a>
+						</div>	
+	
+						<div class="item">
+							<a href="img/23.jpg" download><img src="img/23.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/15.jpg" download><img src="img/15.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/12.jpg" download><img src="img/12.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/10.jpg" download><img src="img/10.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/9.jpg" download><img src="img/9.jpg" alt="..." width="300px" height="500px"></a>
+						</div>			
+
+						<div class="item">
+							<a href="img/5.jpg" download><img src="img/5.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel5" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel5" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="comfort" class="container-fluid"> 
+	<div class = "row">
+			<div class = "col-sm-12">
+				<h2><b>#캐릭터</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel6" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel6" data-slide-to="1"></li>
+							<li data-target="#myCarousel6" data-slide-to="2"></li>
+							<li data-target="#myCarousel6" data-slide-to="3"></li>
+							<li data-target="#myCarousel6" data-slide-to="4"></li>
+							<li data-target="#myCarousel6" data-slide-to="5"></li>
+							<li data-target="#myCarousel6" data-slide-to="6"></li>
+							<li data-target="#myCarousel6" data-slide-to="7"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="img/1.jpg" download><img src="img/1.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/2.jpg" download><img src="img/2.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/3.jpg" download><img src="img/3.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/6.jpg" download><img src="img/6.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/7.jpg" download><img src="img/7.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/9.jpg" download><img src="img/9.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/21.jpg" download><img src="img/21.jpg" alt="..." width="300px" height="500px"></a>
+						</div>		
+						
+						<div class="item">
+							<a href="img/24.jpg" download><img src="img/24.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel6" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel6" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="sad" class="container-fluid bcolor">
+	<div class = "row">
+			<div class = "col-sm-12">
+				<h2 class="white"><b>#심플</b></h2><br><br>
+				<div class="container">
+					<div id="myCarousel7" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel7" data-slide-to="1"></li>
+							<li data-target="#myCarousel7" data-slide-to="2"></li>
+							<li data-target="#myCarousel7" data-slide-to="3"></li>
+							<li data-target="#myCarousel7" data-slide-to="4"></li>
+							<li data-target="#myCarousel7" data-slide-to="5"></li>
+						</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="img/16.jpg" download><img src="img/16.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/17.jpg" download><img src="img/17.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+
+						<div class="item">
+							<a href="img/18.jpg" download><img src="img/18.jpg" alt="..." width="300px" height="500px"></a>
+						</div>
+						
+						<div class="item">
+							<a href="img/8.jpg" download><img src="img/8.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/13.jpg" download><img src="img/13.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+						<div class="item">
+							<a href="img/11.jpg" download><img src="img/11.jpg" alt="..." width="300px" height="500px"></a>
+						</div>						
+						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel7" data-slide="prev" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel7" data-slide="next" style="background:none;">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+		
+	
+	
+		<script>
+			$("button[value=btn1]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#parents").offset().top},'slow');
+			});
+			
+			$("button[value=btn2]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#friend").offset().top},'slow');
+			});
+			
+			$("button[value=btn3]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#teacher").offset().top},'slow');
+			});
+			
+			$("button[value=btn4]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#love").offset().top},'slow');
+			});
+			
+			$("button[value=btn5]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#friendship").offset().top},'slow');
+			});
+			
+			$("button[value=btn6]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#couple").offset().top},'slow');
+			});
+			
+			$("button[value=btn7]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#comfort").offset().top},'slow');
+			});
+			
+			$("button[value=btn8]").click(function() {
+				$('html,body').animate({
+				scrollTop: $("#sad").offset().top},'slow');
+			});
+			
+			
+			
+			$(document).ready(function(){
+				// Activate Carousel
+				$("#myCarousel").carousel();
+    
+				// Enable Carousel Indicators
+				$(".item1").click(function(){
+				$("#myCarousel").carousel(0);
+			});
+			
+			$(".item2").click(function(){
+				$("#myCarousel").carousel(1);
+			});
+			
+			$(".item3").click(function(){
+				$("#myCarousel").carousel(2);
+			});
+			
+			$(".item4").click(function(){
+				$("#myCarousel").carousel(3);
+			});
+    
+			// Enable Carousel Controls
+			$(".left").click(function(){
+				$("#myCarousel").carousel("prev");
+			});
+			
+			$(".right").click(function(){
+				$("#myCarousel").carousel("next");
+			});
+		});
+		
+		$(download).click();
+
+    </script>
+		
+			
+			
+
+		
+	
+	</body>
+</html>

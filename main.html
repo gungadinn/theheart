@@ -1,0 +1,156 @@
+<!--
+페이지 명 	: 	편지지 작성 페이지
+페이지 설명 	: 	편지지를 꾸밀 수 있도록 그리기 도구를 제공합니다.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drawing Heart</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link href="css/main.css" rel="stylesheet" />	
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top dhnavbar" role="navigation">
+			<div class="navigation">
+				<div class="container">					
+					<div class="navbar-header">
+						<div class="navbar-brand">
+							<a href="pointbar.html"><img src="img/drawheart.png" alt="Logo" style="width:100px;"></a>
+						</div>
+					</div>
+					
+					<div class="navbar-collapse collapse">							
+						<div class="menu text-right">
+							<ul class="nav nav-tabs text-right" role="tablist">
+								<li><a href="about.html">About</a></li>
+								<li><a href="main.html">Make</a></li>
+								<li><a href="board.html">Form</a></li>
+								<li><a href="helping.html">Help</a></li>
+							</ul>
+						</div>
+					</div>						
+				</div>
+			</div>	
+		</nav>			
+	</header>
+	
+	<section id="about">
+		<div class="container drawing-tool">
+      <div class="row">
+        <!-- 여기는 사이드바 -->
+        <div class="col-sm-3" id="navside">
+          <div id="drawing-mode-options">
+            <img src="img/drawingtool.png">
+            <table class="table table-borderless ">
+              <tbody>
+                <tr>
+                  <th><button class="btn btn-default" id="btn1"><img src="img/pencil2.png"></button></th>
+                  <th><button class="btn btn-default" id="btn2"><img src="img/range.png"></button></th>
+                  <th><button class="btn btn-default" id="btn3"><img src="img/color.png"></button></th>
+                  <th><button class="btn btn-default" id="eraser"><img src="img/eraser.png"></button></th>
+                </tr>
+                <tr>
+                  <th><button class="btn btn-default" id="text"><img src="img/letter.png"></button></th>
+                  <th><button class="btn btn-default"><img src="img/bucket.png"></button></th>
+                  <th><button class="btn btn-default" id="upload"><img src="img/upload.png"></button></th>
+                  <th><button class="btn btn-default" id="download"><img src="img/download.png"></button></th>
+                </tr>
+                <tr>
+                  <th><button class="btn btn-default" id="undo"><img src="img/undo.png"></button></th>
+                  <th><button class="btn btn-default" id="redo"><img src="img/redo.png"></button></th>
+                  <th><button class="btn btn-default" id="clear-canvas" ><img src="img/reset.png"></button></th>
+                </tr>
+              </tbody>
+            </table>
+            <div id="hs1" class="mode-hide">
+              <label>Mode : </label>
+              <select id="drawing-mode-selector">
+                <option>Pencil</option>
+                <option>Circle</option>
+                <option>Spray</option>
+                <option>Pattern</option>
+                <option>hline</option>
+                <option>vline</option>
+                <option>square</option>
+                <option>diamond</option>
+              </select>
+            </div>
+            <div id="hs2"  class="mode-hide" >
+              <label for="drawing-line-width">Line width : </label>
+              <input type="range" value="30" min="0" max="150" id="drawing-line-width">
+            </div>
+            <div id="hs3" class="mode-hide">
+              <label for="drawing-color">Line color : </label>
+              <input type="color" value="#005E7A" id="drawing-color">
+            </div>
+          </div>
+        </div> <!-- ./사이드바 끝 -->
+        
+        <!-- 여기는 캔버스 부분 (일종의 본문) -->
+        <div class="col-sm-9">
+          <canvas id="c" width="700" height="500" style="border : 1px solid #000000"></canvas>
+        </div> <!-- ./캔버스 끝 -->
+      </div> <!-- ./row 1열 끝 -->
+    </div> <!-- ./본문 끝-->
+  </section><!--/#about-->
+	
+	
+	<footer>
+		<div class="container">
+			<div class="col-md-4  text-center">
+				<h4>About Us</h4>
+				<p>팀 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이용약관</p>
+				<p>개인정보처리방침</p>
+				<p>법적고지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서비스 안내</p>
+			</div>
+			
+			<div class="col-md-4 text-center">
+				<ul class="social-network">
+					<li><a href="#" class="fb tool-tip" title="Facebook"><img src="img/kakaotalk.jpg"></a></li>
+					<li><a href="#" class="twitter tool-tip" title="Twitter"><img src="img/facebook.jpg"></a></li>
+					<li><a href="#" class="gplus tool-tip" title="Youtube"><img src="img/youtube.png"></a></li>
+				</ul>	
+			</div>
+			
+			<div class="col-md-4 text-center">				
+				<div class="copyright">
+					<p>&copy; 양회욱 최승진 김은경 2018 All Rights Reserved</p>
+          <p>&#40;28644&#41; 충청북도 청주시 서원구 충대로1 충북대학교</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+   <!-- 부트스트랩 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script src="js/fabric.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/StreamSaver.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#btn1").click(function() {
+          $("#hs1").toggle();
+        });
+
+        $("#btn2").click(function() {
+          $("#hs2").toggle();
+        });
+
+        $("#btn3").click(function() {
+          $("#hs3").toggle();
+        });
+
+    });
+  </script>
+  </body>
+</html>

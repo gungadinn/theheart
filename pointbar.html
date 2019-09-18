@@ -1,0 +1,87 @@
+<!--
+페이지 명 	: 	시작 페이지
+페이지 설명 	: 	본 페이지는 사용자에게 4가지의 메뉴 중 선택을 할 수 있도록 도와줍니다.
+				메뉴로는 팀 소개, 편지지 작성, 편지지 공유, 도움말이 있습니다.
+-->
+
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/pointbar.css"> 
+		<script src="js/pointbar.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<style>
+			body{
+				margin-top:5%;
+				background-color: #ffb7cf;
+			}
+			
+			.container-fluid{
+				background-color: white;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<figure class="pointbar"  style="margin-left:50%; margin-top:3%; background-color:#F7819F;">
+						  <img src="img/intro.png" alt="intro"/>
+						  <figcaption>
+							<p>팀원 소개 및 사이트 설명</p>
+							<div class="heading">
+								<h2><span>Team Intro</span></h2>
+							</div>
+						  </figcaption>
+						  <a href="about.html"></a>
+						</figure>
+					</div>
+					<div class="col-sm-6">
+						<figure class="pointbar" style="background-color:#CEE3F6; margin-top:3%;">
+							<img src="img/made.png" alt="made" />
+							<figcaption>
+								<p>부모님, 스승의 날, 여자친구/남자친구, 심플, 캐릭터 등 사용자가 테마를 만들어 편지지 형식을 사용할 수 있습니다.</p>
+								<div class="heading">
+									<h2><span>Making Letter</span></h2>
+								</div>
+							</figcaption>
+							<a href="main.html"></a>
+						</figure>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<figure class="pointbar" style="background-color:#9FF781; margin-left:50%;">
+							<img src="img/board.png" alt="board" />
+							<figcaption>
+								<p>이미지 위주의 게시판 - 타 사용자가 만든 편지지를 선택하여 사용할 수 있습니다.</p>
+								<div class="heading">
+								<h2><span>Sharing Form</span></h2>
+								</div>
+							</figcaption>
+							<a href="board.html"></a>
+						</figure>
+					</div>
+					<div class="col-sm-6">
+						<figure class="pointbar" style="background-color:#F2F5A9;">
+							<img src="img/help.png" alt="help" />
+							<figcaption>
+								<p>시연 동영상, 글로 된 도구 설명</p>
+								<div class="heading">
+								<!--hover시에 중앙으로 올라옵니다.-->
+								<h2><span>Helping</span></h2>
+								</div>
+							</figcaption>
+							<a href="helping.html"></a>
+						</figure>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

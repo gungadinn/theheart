@@ -1,0 +1,162 @@
+<!--
+페이지 명 	: 	도움 페이지
+페이지 설명 	: 	본 페이지는 사용자에게 3개의 영상을 제공합니다. 하나는 페이지 전체의 기능을 보여주며,
+			다른 하나는 편지지 작성을 하는 방법, 마지막 하나는 편지지 틀을 공유할 수 있는 방법을 제시합니다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>사용 도우미 페이지</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="css/helping.css" rel="stylesheet"/>   
+    </head>
+
+   <body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top dhnavbar" role="navigation">
+			<div class="navigation">
+				<div class="container">					
+					<div class="navbar-header">
+						<div class="navbar-brand">
+							<a href="pointbar.html"><img src="img/drawheart.png" alt="Logo" style="width:100px;"></a>
+						</div>
+					</div>
+					<div class="navbar-collapse collapse">							
+						<div class="menu text-right">
+							<ul class="nav nav-tabs text-right" role="tablist">
+								<li><a href="about.html">About</a></li>
+								<li><a href="main.html">Make</a></li>
+								<li><a href="board.html">Form</a></li>
+								<li><a href="helping.html">Help</a></li>
+							</ul>
+						</div>
+					</div>						
+				</div>
+			</div>	
+		</nav>			
+	</header>
+      
+    <section id="about">
+      	<div class="row">
+	        <div class="container bg-3 text-center videobt">    
+         		<div class="col-sm-6 col-sm-offset-3  ">
+					<!--첫 번째 그림 클릭 시에  영상이 작은 창에 띄워집니다.-->
+		            <img src="img/drawingpic.png" width="400" height="300" onclick="document.getElementById('id01').style.display='block'"></img>
+		        </div>
+			</div>
+		</div>
+		
+		<div class="row">
+	        <div class="container bg-3 text-center">  
+		        <div class="col-sm-6 col-sm-offset-3 videobt">
+					<!--두 번째 그림 클릭 시에  영상이 작은 창에 띄워집니다.-->
+		            <img src="img/boardpic.png" width="400" height="300" onclick="document.getElementById('id02').style.display='block'"></img>
+		        </div>
+	        </div>
+      	</div>
+
+      	<div class="row">
+	    	<div class="container bg-3 text-center">    
+	            <div class="col-sm-6 col-sm-offset-3">
+					<!--세 번째 그림 클릭 시에  영상이 작은 창에 띄워집니다.-->
+		            <img src="img/allpic.png" width="400" height="300" onclick="document.getElementById('id03').style.display='block'"></img>
+		        </div>
+			</div>
+		</div><br><br>
+    </section>
+      
+	 <!--그림 1번 클릭 시에 아래의 modal이 작은 창으로 띄워집니다.-->
+     <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+         <div class="imgcontainer">
+			<!--창을 닫는 부분-->
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Video" style="z-index:3;">&times;</span>
+			<!--z-index를 주지 않으면 닫는 버튼이 묻힙니다.-->
+		 </div>
+         <div class="container">
+            <video width="600" height="450" controls>
+               <source src="vendor/drawing.mp4" type="video/mp4">
+            </video>
+         </div>
+        </form>
+      </div>
+      
+	  <!--그림 2번 클릭 시에 아래의 modal이 작은 창으로 띄워집니다.-->
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+         <div class="imgcontainer">
+			<!--창을 닫는 부분-->
+           <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Video" style="z-index:3;">&times;</span>
+			<!--z-index를 주지 않으면 닫는 버튼이 묻힙니다.-->
+		 </div>
+         <div class="container">
+            <video width="600" height="450" controls>
+               <source src="vendor/board.mp4" type="video/mp4">
+            </video>
+         </div>
+        </form>
+      </div>
+      
+      <!--그림 3번 클릭 시에 아래의 modal이 작은 창으로 띄워집니다.-->
+      <div id="id03" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+         <div class="imgcontainer">
+			<!--창을 닫는 부분-->
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Video" style="z-index:3;">&times;</span>
+			<!--z-index를 주지 않으면 닫는 버튼이 묻힙니다.-->
+		 </div>
+         <div class="container">
+            <video width="600" height="450" controls>
+               <source src="vendor/all.mp4" type="video/mp4">
+            </video>
+         </div>
+        </form>
+      </div>
+
+      <footer class="container-fluid text-center">
+              <div class="container container-footer">
+         <div class="col-md-4  text-center">
+            <h4>About Us</h4>
+            <p>팀 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이용약관</p>
+            <p>개인정보처리방침</p>
+            <p>법적고지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서비스 안내</p>
+         </div>
+         
+         <div class="col-md-4 text-center">
+            <ul class="social-network">
+               <li><a href="#" class="fb tool-tip" title="Facebook"><img src="img/kakaotalk.jpg"></a></li>
+               <li><a href="#" class="twitter tool-tip" title="Twitter"><img src="img/facebook.jpg"></a></li>
+               <li><a href="#" class="gplus tool-tip" title="Youtube"><img src="img/youtube.png"></a></li>
+            </ul>   
+         </div>
+         
+         <div class="col-md-4 text-center">            
+            <div class="copyright">
+               <p>&copy; 양회욱 최승진 김은경 2018 All Rights Reserved</p>
+          <p>&#40;28644&#41; 충청북도 청주시 서원구 충대로1 충북대학교</p>
+            </div>
+         </div>
+      </div>   
+      </footer>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+         if (event.target == modal) {
+            modal.style.display = "none";
+         }
+      }
+
+      $("#id01").on('hidden.bs.modal', function (e) {
+    $("#id01 iframe").attr("src", $("#id01 iframe").attr("src"));
+});
+      </script>
+   </body>
+</html>
